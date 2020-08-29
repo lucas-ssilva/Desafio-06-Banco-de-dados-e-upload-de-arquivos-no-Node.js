@@ -3,7 +3,7 @@ import { Entity, Column, PrimaryGeneratedColumn, CreateDateColumn, UpdateDateCol
 
 import Category from './Category';
 
-@Entity('transaction')
+@Entity('transactions')
 class Transaction {
 
   @PrimaryGeneratedColumn('uuid')
@@ -15,7 +15,7 @@ class Transaction {
   @Column()
   type: string;
 
-  @Column()
+  @Column('decimal')
   value: number;
 
   @ManyToOne(() => Category)
