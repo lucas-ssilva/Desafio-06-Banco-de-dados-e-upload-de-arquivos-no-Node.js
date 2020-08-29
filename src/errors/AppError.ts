@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 class AppError {
   public readonly message: string;
 
